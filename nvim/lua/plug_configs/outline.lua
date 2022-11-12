@@ -1,0 +1,30 @@
+vim.g.symbols_outline = {
+	symbols = {
+        String = {icon = "", hl = "TSString"},
+        Method = {icon = "", hl = "TSMethod"},
+        Constructor = {icon = "", hl = "TSConstructor"},
+        Variable = {icon = "", hl = "TSConstant"},
+        Class = {icon = "ﴯ", hl = "TSType"},
+        Interface = {icon = "", hl = "TSType"},
+        Module = {icon = "", hl = "TSNamespace"},
+        Property = {icon = "ﰠ", hl = "TSMethod"},
+        Field = {icon = "", hl = "TSField"},
+        File = {icon = "", hl = "TSURI"},
+        Namespace = {icon = "", hl = "TSNamespace"},
+        Package = {icon = "", hl = "TSNamespace"},
+        Enum = {icon = "", hl = "TSType"},
+        Function = {icon = "", hl = "TSFunction"},
+        Constant = {icon = "", hl = "TSConstant"},
+        Number = {icon = "", hl = "TSNumber"},
+        Boolean = {icon = "⊨", hl = "TSBoolean"},
+        Array = {icon = "", hl = "TSConstant"},
+        Object = {icon = "", hl = "TSType"},
+        Key = {icon = "", hl = "TSType"},
+        Null = {icon = "ﳠ", hl = "TSType"},
+        EnumMember = {icon = "", hl = "TSField"},
+        Struct = {icon = "פּ", hl = "TSType"},
+        Event = {icon = "", hl = "TSType"},
+        Operator = {icon = "", hl = "TSOperator"},
+        TypeParameter = {icon = " ", hl = "TSParameter"}
+    }
+}
