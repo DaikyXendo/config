@@ -55,6 +55,12 @@ require("plug_configs.lspkind")
 require("plug_configs.lspsaga")
 require("plug_configs.cmp")
 
+-- Snippet
+require("plug_configs.luasnip")
+
+-- Error
+require("plug_configs.trouble")
+
 -- Rust
 require("plug_configs.rust")
 
@@ -73,6 +79,9 @@ require("plug_configs.hop")
 
 -- Git
 require("plug_configs.git")
+
+-- Scroll Bar
+require("plug_configs.scrollbar")
 
 -- DAP
 require("plug_configs.dap")

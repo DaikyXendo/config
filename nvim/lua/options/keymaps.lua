@@ -109,3 +109,9 @@ keymap("n", "gd", "<cmd>Lspsaga lsp_finder<CR>", opts)
 keymap("n", "<C-k>", "<cmd>Lspsaga signature_help<CR>", opts)
 keymap("n", "gp", "<cmd>Lspsaga preview_definition<CR>", opts)
 keymap("n", "gr", "<cmd>Lspsaga rename<CR>", opts)
+
+-- Luasnip --
+keymap("i", "<Tab>", 'luasnip#expand_or_jumpable() ? "<Plug>luasnip-expand-or-jump" : "<Tab>"', opts)
+
+-- Trouble
+keymap("n", "<Space>t", "<cmd>TroubleToggle<CR>", opts)

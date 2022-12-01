@@ -3,6 +3,13 @@ if (not status) then return end
 
 local protocol = require('vim.lsp.protocol')
 
+-- Diagnostic symbols in the sign column (gutter)
+local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
+for type, icon in pairs(signs) do
+    local hl = "DiagnosticSign" .. type
+    vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
+end
+
 local on_attach = function(client, bufnr)
     -- Formatting
     if client.server_capabilities.documentFormattingProvider then
@@ -34,7 +41,7 @@ nvim_lsp.jsonls.setup {
     on_attach = on_attach,
 }
 
-require 'lspconfig'.tailwindcss.setup {}
+nvim_lsp.tailwindcss.setup {}
 
 nvim_lsp.tsserver.setup {
     on_attach = function(client)

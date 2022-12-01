@@ -74,6 +74,9 @@ return packer.startup(function()
     use("williamboman/mason-lspconfig.nvim")
     use("j-hui/fidget.nvim")
 
+    -- Trouble
+    use("folke/trouble.nvim")
+
     -- Rust
     use("Saecki/crates.nvim")
     use("simrat39/rust-tools.nvim")
@@ -95,6 +98,10 @@ return packer.startup(function()
     -- Git
     use("tanvirtin/vgit.nvim")
     use("lewis6991/gitsigns.nvim")
+
+    -- Scroll bar
+    use("petertriho/nvim-scrollbar")
+    use("kevinhwang91/nvim-hlslens")
 
     -- Debugger
     use("mfussenegger/nvim-dap")
